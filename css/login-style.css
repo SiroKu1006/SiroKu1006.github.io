@@ -1,22 +1,23 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins',sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(https://i.imgur.com/yDaHYdT.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(https://pbs.twimg.com/media/F9oSuplWIAAL5WP?format=jpg&name=4096x4096);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-section{
+section {
     position: relative;
     max-width: 400px;
     background-color: transparent;
@@ -29,36 +30,36 @@ section{
     padding: 2rem 3rem;
 }
 
-h1{
+h1 {
     font-size: 2rem;
     color: #fff;
     text-align: center;
 }
 
-.inputbox{
+.inputbox {
     position: relative;
     margin: 30px 0;
     max-width: 310px;
     border-bottom: 2px solid #fff;
 }
 
-.inputbox label{
+.inputbox label {
     position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
     color: #fff;
+    font-size: 1rem;
     pointer-events: none;
     transition: all 0.5s ease-in-out;
-    font-size: 1rem;
 }
 
-input:focus ~ label,
-input:valid ~ label{
+input:focus ~ label, 
+input:valid ~ label {
     top: -5px;
 }
 
-.inputbox input{
+.inputbox input {
     width: 100%;
     height: 60px;
     background: transparent;
@@ -67,17 +68,22 @@ input:valid ~ label{
     font-size: 1rem;
     padding: 0 35px 0 5px;
     color: #fff;
+
 }
 
-.inputbox ion-icon{
+.inputbox ion-icon {
     position: absolute;
     right: 8px;
-    color:#fff;
+    color: #fff;
     font-size: 1.2rem;
     top: 20px;
 }
 
-.forget{
+input::placeholder {
+    color: #fff;
+}
+
+.forget {
     margin: 35px 0;
     font-size: 0.85rem;
     color: #fff;
@@ -85,56 +91,55 @@ input:valid ~ label{
     justify-content: space-between;
 }
 
-.forget label{
+.forget label {
     display: flex;
     align-items: center;
 }
 
-.forget label input{
+.forget label input {
     margin-right: 3px;
 }
 
-.forget a{
+.forget a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.forget a:hover{
+.forget a:hover {
     text-decoration: underline;
 }
 
-button{
+button {
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background-color: rgb(255, 255, 255,1);
+    background-color: rgb(255, 255,255, 1);
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    transform: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-button:hover{
-    background-color: rgb(255, 255, 255,0.5);
+button:hover {
+ background-color: rgb(255, 255,255, 0.5);
 }
 
-.register{
+.register {
     font-size: 0.9rem;
     color: #fff;
     text-align: center;
     margin: 25px 0 10px;
 }
 
-.register p a{
+.register p a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
 
-.register p a:hover{
+.register p a:hover {
     text-decoration: underline;
 }
-
